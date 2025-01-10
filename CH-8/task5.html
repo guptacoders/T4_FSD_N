@@ -1,0 +1,25 @@
+<!-- /WAP JS TO CHECK OCCURENCE A GIVEN CHARACTER IN TWO STRING  ENTERD BY USER  -->
+<!-- IF YOU CHECK THE NO OF OCCURENCES OF CHARACYER O IN STRING SCHOOL THE RESULT IS 2 -->
+<html>
+    <head>
+    <script type="text/javascript">
+    function getval()
+    {
+        count=0;
+    var str = prompt("Enter String: ", "");
+    var x = prompt("Enter Search String: ", "");
+    for(i=0;i<=str.length;i++)
+    {
+        if(str[i]==x)
+        {
+            count++;
+        }
+    }
+    document.write("occurence of "+count);
+    }
+    </script>
+    </head>
+    <body>
+    <input type="button" onclick="getval()" value="OK"/>
+    </body>
+    </html>

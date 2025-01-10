@@ -1,0 +1,34 @@
+<!-- wap to find factorial of 5 by using recursion -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var factorial;
+        function fact(n)
+        {
+           if(n==1)
+           {
+            return 1;
+           }
+           else{
+            factorial = n*fact(n-1);
+            return factorial;
+           }
+        }
+        function hello()
+        {
+            var result;
+            result = fact(5);
+            alert("Factorial of 5 is: "+result);
+            document.write(result);
+        }
+        
+    </script>
+</head>
+<body>
+    <input type="button" value="say hello" onclick="hello()">
+</body>
+</html>

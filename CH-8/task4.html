@@ -1,0 +1,34 @@
+<html>
+<head>
+<script>
+    function getval()
+{
+        var n = prompt("Enter Value Of n: ", "Your Value here");
+        var x = prompt("Enter Value Of x: ", "Your Value here");
+        
+        function fact(n)
+        { 
+            if(n==1)
+            return(1);
+            else
+            {
+            factorial=n*fact(n-1);
+            return factorial;
+            }
+         }
+         sum=0;
+         for(i=1;i<=n;i++)
+        {
+            sum=sum+Math.pow(x,i)/fact(i);
+
+        }
+total=sum+1;
+document.write(total);
+}
+getval();
+</script>
+</head>
+<body>
+
+</body>
+</html>

@@ -1,0 +1,94 @@
+<!-- JAVASCRIPT ARRAY LITERAL (METHOD 1) -->
+<!-- <html>
+<head>
+    <script>
+        var emp=["ABC","XYZ"];
+
+        for(i=0;i<emp.length;i++){
+            document.write(emp[i]+"<br>")
+        }
+    </script>
+</head>
+</html> -->
+
+<!-- JAVASCRIPT ARRAY USING "NEW" KEYWORD (METHOD 2) -->
+<!-- <html>
+<head>
+    <script>
+        var emp = new Array();
+
+        emp[0]="NEEL";
+        emp[1]="Patel";
+
+        for(i=0;i<emp.length;i++)
+        {
+            document.write(emp[i]+"<br>");
+        }
+
+    </script>
+</head>
+</html> -->
+
+
+
+<!-- METHOD 1 -->
+<!-- <html>
+<body>
+<script type="text/javascript" language="javascript">
+ var student = {id:101 , name: 'Neel' ,marks:25};
+ document.write(student.id+"<br>")
+ document.write(student.name+"<br>")
+ document.write(student.marks+"<br>")
+</script>
+</body>
+</html> -->
+
+<!-- METHOD 2 -->
+
+<!-- <html>
+  <body>
+    <script type="text/javascript" language="javascript">
+      var student = new Object();
+      student.id=102;
+      student.name="King";
+      student.marks=24;
+      document.write(student.id+"<br>")
+ document.write(student.name+"<br>")
+ document.write(student.marks+"<br>")
+    </script>
+  </body>
+</html> -->
+
+<!-- by using an object constructor -->
+<html>
+    <body>
+      <script type="text/javascript" language="javascript">
+       function student(id,name,marks)
+       {
+        this.id=id;
+        this.name=name;
+        this.marks=marks;
+       }
+
+       e= new student(103,"D2",23);
+
+       document.write(e.id);
+       document.write(e.name);
+       document.write(e.marks);
+      </script>
+    </body>
+  </html>
+
+<!-- Javascript Array constructor -->
+
+<!-- <html>
+  <body>
+    <script type="text/javascript" language="javascript">
+      var i;
+      var emp = new Array("abc", "xyz", "pqr");
+      for (i = 0; i < emp.length; i++) {
+        document.write(emp[i] + "<br>");
+      }
+    </script>
+  </body>
+</html> -->
